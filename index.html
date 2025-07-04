@@ -6,6 +6,7 @@
     <title>MWT Concept - توانمندسازی سفر معاملاتی شما</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* تمام استایل‌های قبلی بدون تغییر باقی می‌مانند */
         :root {
             --neon-blue: #0ff0fc;
             --dark-bg: #0a0a1a;
@@ -614,15 +615,15 @@
         </header>
         
         <div class="logo-container">
-            <img src=" 51D8C18B-603C-4B80-92F5-609229941BF4.png" alt="MWT Logo" class="logo">
-            <h1 class="title">توانمندسازی سفر معاملاتی شما</h1>
-            <p class="subtitle">Empowering your trade journey</p>
-            <h2 class="founder">بنیانگذار مفهوم MWT</h2>
-            <p class="subtitle">founder of MWT concept</p>
+            <img src="https://i.ibb.co/VYvLqQk/mwt-logo.png" alt="MWT Logo" class="logo">
+            <h1 class="title" id="main-title">توانمندسازی سفر معاملاتی شما</h1>
+            <p class="subtitle" id="main-subtitle">Empowering your trade journey</p>
+            <h2 class="founder" id="founder-title">بنیانگذار مفهوم MWT</h2>
+            <p class="subtitle" id="founder-subtitle">founder of MWT concept</p>
         </div>
         
         <!-- بخش درباره ما -->
-        <h2 class="section-header">درباره ی ما</h2>
+        <h2 class="section-header" id="about-header">درباره ی ما</h2>
         <div class="icon-box" id="about-section">
             <div class="section-icon">
                 <i class="fas fa-users"></i>
@@ -630,7 +631,7 @@
         </div>
         
         <!-- بخش خدمات -->
-        <h2 class="section-header">خدمات</h2>
+        <h2 class="section-header" id="services-header">خدمات</h2>
         <div class="icon-box" id="services-section">
             <div class="section-icon">
                 <i class="fas fa-graduation-cap"></i>
@@ -639,7 +640,7 @@
         
         <!-- محتوای محافظت شده -->
         <div class="protected-content" id="protected-content">
-            <p>برای دسترسی به خدمات باید ثبت نام کنید</p>
+            <p id="protected-text">برای دسترسی به خدمات باید ثبت نام کنید</p>
             <button class="btn btn-primary" id="protected-register-btn">ثبت نام</button>
         </div>
         
@@ -660,17 +661,17 @@
         <!-- پشتیبانی -->
         <div class="collapsible">
             <div class="collapsible-header">
-                <h3 class="support-title">پشتیبانی</h3>
+                <h3 class="support-title" id="support-title">پشتیبانی</h3>
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="collapsible-content">
                 <div class="contact-item">
                     <i class="fab fa-telegram"></i>
-                    <span>@MWT_Support</span>
+                    <span id="telegram-contact">@MWT_Support</span>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-whatsapp"></i>
-                    <span>09393807645</span>
+                    <span id="whatsapp-contact">09393807645</span>
                 </div>
             </div>
         </div>
@@ -678,21 +679,21 @@
         <!-- مسیرهای ارتباطی -->
         <div class="collapsible">
             <div class="collapsible-header">
-                <h3 class="support-title">مسیر های ارتباطی</h3>
+                <h3 class="support-title" id="contact-title">مسیر های ارتباطی</h3>
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="collapsible-content">
                 <div class="contact-item">
                     <i class="fab fa-instagram"></i>
-                    <span>instagram.com/MWT_Concept</span>
+                    <span id="instagram-contact">instagram.com/MWT_Concept</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>info@mwt-concept.com</span>
+                    <span id="email-contact">info@mwt-concept.com</span>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-youtube"></i>
-                    <span>youtube.com/MWT_Concept</span>
+                    <span id="youtube-contact">youtube.com/MWT_Concept</span>
                 </div>
             </div>
         </div>
@@ -704,16 +705,16 @@
         
         <div class="chat-container">
             <div class="chat-header">
-                <span>چت آنلاین با پشتیبانی</span>
+                <span id="chat-title">چت آنلاین با پشتیبانی</span>
                 <i class="fas fa-times close-chat"></i>
             </div>
             <div class="chat-body" id="chat-messages">
                 <div class="message received">
-                    <p>سلام! چطور می‌تونم کمکتون کنم؟</p>
+                    <p id="welcome-message">سلام! چطور می‌تونم کمکتون کنم؟</p>
                 </div>
             </div>
             <div class="chat-footer">
-                <input type="text" class="chat-input" placeholder="پیام خود را بنویسید...">
+                <input type="text" class="chat-input" id="chat-input" placeholder="پیام خود را بنویسید...">
                 <button class="chat-send"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
@@ -721,30 +722,30 @@
     
     <!-- پیام دسترسی -->
     <div class="access-message" id="access-message">
-        برای دسترسی به خدمات باید ثبت نام کنید
+        <span id="access-text">برای دسترسی به خدمات باید ثبت نام کنید</span>
         <button class="btn btn-primary" id="access-register-btn">ثبت نام</button>
     </div>
     
     <!-- فوتر -->
     <footer>
-        تمامی حقوق این سایت متعلق به MWT Concept می‌باشد &copy; 2023
+        <p id="footer-text">تمامی حقوق این سایت متعلق به MWT Concept می‌باشد &copy; 2023</p>
     </footer>
     
     <!-- مودال ورود -->
     <div class="modal" id="login-modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2>ورود به حساب کاربری</h2>
+            <h2 id="login-title">ورود به حساب کاربری</h2>
             <form id="login-form">
                 <div class="form-group">
-                    <label for="login-email">ایمیل</label>
+                    <label for="login-email" id="email-label">ایمیل</label>
                     <input type="email" id="login-email" required>
                 </div>
                 <div class="form-group">
-                    <label for="login-password">رمز عبور</label>
+                    <label for="login-password" id="password-label">رمز عبور</label>
                     <input type="password" id="login-password" required>
                 </div>
-                <button type="submit" class="form-submit btn-primary">ورود</button>
+                <button type="submit" class="form-submit btn-primary" id="login-submit">ورود</button>
                 <div class="success-message" id="login-success"></div>
                 <div class="error-message" id="login-error"></div>
             </form>
@@ -755,29 +756,29 @@
     <div class="modal" id="register-modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2>ثبت نام جدید</h2>
+            <h2 id="register-title">ثبت نام جدید</h2>
             <form id="register-form">
                 <div class="form-group">
-                    <label for="reg-name">نام کامل</label>
+                    <label for="reg-name" id="name-label">نام کامل</label>
                     <input type="text" id="reg-name" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-email">ایمیل</label>
+                    <label for="reg-email" id="reg-email-label">ایمیل</label>
                     <input type="email" id="reg-email" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-phone">شماره تماس</label>
+                    <label for="reg-phone" id="phone-label">شماره تماس</label>
                     <input type="tel" id="reg-phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-password">رمز عبور</label>
+                    <label for="reg-password" id="reg-password-label">رمز عبور</label>
                     <input type="password" id="reg-password" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-confirm">تکرار رمز عبور</label>
+                    <label for="reg-confirm" id="confirm-label">تکرار رمز عبور</label>
                     <input type="password" id="reg-confirm" required>
                 </div>
-                <button type="submit" class="form-submit btn-primary">ثبت نام</button>
+                <button type="submit" class="form-submit btn-primary" id="register-submit">ثبت نام</button>
                 <div class="success-message" id="register-success"></div>
                 <div class="error-message" id="register-error"></div>
             </form>
@@ -785,27 +786,174 @@
     </div>
     
     <script>
-        // مدیریت زبان
-        const langFa = document.getElementById('lang-fa');
-        const langEn = document.getElementById('lang-en');
-        
-        // ترجمه‌ها
+        // شیء ترجمه کامل
         const translations = {
             fa: {
+                // هدر و عنوان
                 title: "توانمندسازی سفر معاملاتی شما",
+                subtitle: "Empowering your trade journey",
+                founderTitle: "بنیانگذار مفهوم MWT",
+                founderSubtitle: "founder of MWT concept",
+                
+                // منو و دکمه‌ها
                 login: "ورود",
                 register: "ثبت نام",
                 logout: "خروج",
-                profile: "پروفایل"
+                profile: "پروفایل",
+                
+                // بخش‌های محتوا
+                aboutHeader: "درباره ی ما",
+                servicesHeader: "خدمات",
+                
+                // محتوای محافظت شده
+                protectedText: "برای دسترسی به خدمات باید ثبت نام کنید",
+                registerBtn: "ثبت نام",
+                accessText: "برای دسترسی به خدمات باید ثبت نام کنید",
+                
+                // متن‌های انگیزشی
+                motivational1: "در دنیای پر از نوسان و فرصت‌های بی‌پایان بازارهای مالی، موفقیت تنها از آن کسانی است که جرئت می‌کنند قدم اول را بردارند، پشتکار دارند و همواره در مسیر یادگیری و رشد هستند. ترید کردن، هنر تحلیل و تصمیم‌گیری در لحظه‌های حساس است که می‌تواند زندگی شما را متحول کند.",
+                motivational2: "ما در کنار تحلیل تکنیکال و فاندامنتال، از قدرت استرولوژی مالی نیز بهره می‌بریم؛ دانشی که با بررسی موقعیت سیارات و تأثیرات آن‌ها بر احساسات جمعی بازار، به ما دیدگاهی عمیق‌تر و زمان‌بندی دقیق‌تری برای ورود و خروج می‌دهد. این ترکیب هوشمندانه از علم و هنر، می‌تواند شما را چند قدم جلوتر از بازار نگه دارد.",
+                motivational3: "امروز زمان آن است که ترس‌ها را کنار بگذارید و به سمت آینده‌ای روشن‌تر حرکت کنید. با ما، آموزش ترید اسکلپی و روندی را به‌همراه نگاهی متفاوت از جنس کیهان تجربه می‌کنید.",
+                
+                // پشتیبانی و تماس
+                supportTitle: "پشتیبانی",
+                contactTitle: "مسیر های ارتباطی",
+                telegramContact: "@MWT_Support",
+                whatsappContact: "09393807645",
+                instagramContact: "instagram.com/MWT_Concept",
+                emailContact: "info@mwt-concept.com",
+                youtubeContact: "youtube.com/MWT_Concept",
+                
+                // چت
+                chatTitle: "چت آنلاین با پشتیبانی",
+                chatPlaceholder: "پیام خود را بنویسید...",
+                welcomeMessage: "سلام! چطور می‌تونم کمکتون کنم؟",
+                
+                // فوتر
+                footerText: "تمامی حقوق این سایت متعلق به MWT Concept می‌باشد &copy; 2023",
+                
+                // فرم‌ها
+                loginTitle: "ورود به حساب کاربری",
+                registerTitle: "ثبت نام جدید",
+                nameLabel: "نام کامل",
+                emailLabel: "ایمیل",
+                phoneLabel: "شماره تماس",
+                passwordLabel: "رمز عبور",
+                confirmLabel: "تکرار رمز عبور",
+                loginSubmit: "ورود",
+                registerSubmit: "ثبت نام"
             },
             en: {
+                // هدر و عنوان
                 title: "Empowering Your Trading Journey",
+                subtitle: "Empowering your trade journey",
+                founderTitle: "Founder of MWT Concept",
+                founderSubtitle: "founder of MWT concept",
+                
+                // منو و دکمه‌ها
                 login: "Login",
                 register: "Register",
                 logout: "Logout",
-                profile: "Profile"
+                profile: "Profile",
+                
+                // بخش‌های محتوا
+                aboutHeader: "About Us",
+                servicesHeader: "Services",
+                
+                // محتوای محافظت شده
+                protectedText: "You need to register to access services",
+                registerBtn: "Register",
+                accessText: "You need to register to access services",
+                
+                // متن‌های انگیزشی
+                motivational1: "In the volatile world of financial markets with endless opportunities, success belongs only to those who dare to take the first step, persevere and constantly pursue learning and growth. Trading is the art of analysis and decision-making in critical moments that can transform your life.",
+                motivational2: "Along with technical and fundamental analysis, we utilize the power of financial astrology - a knowledge that by examining planetary positions and their effects on market collective emotions, gives us deeper insight and more precise timing for entries and exits. This intelligent combination of science and art can keep you several steps ahead of the market.",
+                motivational3: "Today is the time to put aside your fears and move toward a brighter future. With us, experience scalp and trend trading education along with a unique cosmic perspective.",
+                
+                // پشتیبانی و تماس
+                supportTitle: "Support",
+                contactTitle: "Contact Channels",
+                telegramContact: "@MWT_Support",
+                whatsappContact: "+98 939 380 7645",
+                instagramContact: "instagram.com/MWT_Concept",
+                emailContact: "info@mwt-concept.com",
+                youtubeContact: "youtube.com/MWT_Concept",
+                
+                // چت
+                chatTitle: "Live Support Chat",
+                chatPlaceholder: "Type your message...",
+                welcomeMessage: "Hello! How can I help you today?",
+                
+                // فوتر
+                footerText: "All rights reserved by MWT Concept &copy; 2023",
+                
+                // فرم‌ها
+                loginTitle: "Login to Account",
+                registerTitle: "New Registration",
+                nameLabel: "Full Name",
+                emailLabel: "Email",
+                phoneLabel: "Phone Number",
+                passwordLabel: "Password",
+                confirmLabel: "Confirm Password",
+                loginSubmit: "Login",
+                registerSubmit: "Register"
             }
         };
+
+        // تابع تغییر زبان
+        function changeLanguage(lang) {
+            // تغییر جهت صفحه
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
+            document.body.className = lang === 'en' ? 'english' : '';
+            
+            const t = translations[lang] || translations.fa;
+            
+            // به‌روزرسانی تمام متن‌ها
+            document.getElementById('main-title').textContent = t.title;
+            document.getElementById('main-subtitle').textContent = t.subtitle;
+            document.getElementById('founder-title').textContent = t.founderTitle;
+            document.getElementById('founder-subtitle').textContent = t.founderSubtitle;
+            
+            document.getElementById('about-header').textContent = t.aboutHeader;
+            document.getElementById('services-header').textContent = t.servicesHeader;
+            
+            document.getElementById('protected-text').textContent = t.protectedText;
+            document.getElementById('protected-register-btn').textContent = t.registerBtn;
+            document.getElementById('access-text').textContent = t.accessText;
+            document.getElementById('access-register-btn').textContent = t.registerBtn;
+            
+            document.getElementById('motivational-text-1').textContent = t.motivational1;
+            document.getElementById('motivational-text-2').textContent = t.motivational2;
+            document.getElementById('motivational-text-3').textContent = t.motivational3;
+            
+            document.getElementById('support-title').textContent = t.supportTitle;
+            document.getElementById('contact-title').textContent = t.contactTitle;
+            document.getElementById('telegram-contact').textContent = t.telegramContact;
+            document.getElementById('whatsapp-contact').textContent = t.whatsappContact;
+            document.getElementById('instagram-contact').textContent = t.instagramContact;
+            document.getElementById('email-contact').textContent = t.emailContact;
+            document.getElementById('youtube-contact').textContent = t.youtubeContact;
+            
+            document.getElementById('chat-title').textContent = t.chatTitle;
+            document.getElementById('chat-input').placeholder = t.chatPlaceholder;
+            document.getElementById('welcome-message').textContent = t.welcomeMessage;
+            
+            document.getElementById('footer-text').textContent = t.footerText;
+            
+            // ترجمه فرم‌ها
+            document.getElementById('login-title').textContent = t.loginTitle;
+            document.getElementById('register-title').textContent = t.registerTitle;
+            document.getElementById('name-label').textContent = t.nameLabel;
+            document.getElementById('email-label').textContent = t.emailLabel;
+            document.getElementById('phone-label').textContent = t.phoneLabel;
+            document.getElementById('password-label').textContent = t.passwordLabel;
+            document.getElementById('confirm-label').textContent = t.confirmLabel;
+            document.getElementById('login-submit').textContent = t.loginSubmit;
+            document.getElementById('register-submit').textContent = t.registerSubmit;
+            
+            updateAuthButtons();
+        }
 
         // تابع به‌روزرسانی دکمه‌های احراز هویت
         function updateAuthButtons() {
@@ -858,11 +1006,15 @@
             const password = document.getElementById('reg-password').value;
             const confirmPassword = document.getElementById('reg-confirm').value;
             
+            // بررسی تطابق رمز عبور
             if (password !== confirmPassword) {
-                alert("رمز عبور و تکرار آن مطابقت ندارند!");
+                const currentLang = document.documentElement.lang;
+                const errorMsg = currentLang === 'fa' ? "رمز عبور و تکرار آن مطابقت ندارند!" : "Passwords don't match!";
+                alert(errorMsg);
                 return;
             }
             
+            // ذخیره اطلاعات کاربر
             localStorage.setItem('userName', name);
             localStorage.setItem('userEmail', email);
             localStorage.setItem('userPassword', password);
@@ -871,6 +1023,11 @@
             this.reset();
             document.getElementById('register-modal').style.display = 'none';
             updateAuthButtons();
+            
+            // نمایش پیام موفقیت
+            const currentLang = document.documentElement.lang;
+            const successMsg = currentLang === 'fa' ? "ثبت نام با موفقیت انجام شد!" : "Registration successful!";
+            alert(successMsg);
         });
 
         // مدیریت ورود
@@ -887,26 +1044,18 @@
                 this.reset();
                 document.getElementById('login-modal').style.display = 'none';
                 updateAuthButtons();
+                
+                // نمایش پیام موفقیت
+                const currentLang = document.documentElement.lang;
+                const successMsg = currentLang === 'fa' ? "ورود با موفقیت انجام شد!" : "Login successful!";
+                alert(successMsg);
             } else {
-                alert("ایمیل یا رمز عبور اشتباه است!");
+                // نمایش پیام خطا
+                const currentLang = document.documentElement.lang;
+                const errorMsg = currentLang === 'fa' ? "ایمیل یا رمز عبور اشتباه است!" : "Email or password is incorrect!";
+                alert(errorMsg);
             }
         });
-
-        // مدیریت تغییر زبان
-        function changeLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
-            document.body.className = lang === 'en' ? 'english' : '';
-            
-            const t = translations[lang] || translations.fa;
-            
-            // به‌روزرسانی متن‌ها
-            document.querySelector('.title').textContent = t.title;
-            document.querySelector('.login-btn') && (document.querySelector('.login-btn').textContent = t.login);
-            document.querySelector('.register-btn') && (document.querySelector('.register-btn').textContent = t.register);
-            
-            updateAuthButtons();
-        }
 
         // مدیریت چت
         document.querySelector('.chat-toggle').addEventListener('click', function() {
@@ -922,8 +1071,32 @@
             const input = document.querySelector('.chat-input');
             const message = input.value.trim();
             if (message) {
-                // ارسال پیام
+                // ایجاد پیام جدید
+                const chatMessages = document.getElementById('chat-messages');
+                const newMessage = document.createElement('div');
+                newMessage.className = 'message sent';
+                newMessage.innerHTML = `<p>${message}</p>`;
+                chatMessages.appendChild(newMessage);
+                
+                // پاک کردن فیلد ورودی
                 input.value = '';
+                
+                // اسکرول به پایین
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // پاسخ خودکار (شبیه‌سازی)
+                setTimeout(() => {
+                    const currentLang = document.documentElement.lang;
+                    const response = currentLang === 'fa' ? 
+                        "پیام شما دریافت شد. به زودی پاسخ داده خواهد شد." : 
+                        "Your message has been received. We'll respond shortly.";
+                    
+                    const autoReply = document.createElement('div');
+                    autoReply.className = 'message received';
+                    autoReply.innerHTML = `<p>${response}</p>`;
+                    chatMessages.appendChild(autoReply);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 1000);
             }
         });
 
@@ -961,11 +1134,29 @@
 
         // مقداردهی اولیه
         document.addEventListener('DOMContentLoaded', function() {
-            langFa.addEventListener('click', () => changeLanguage('fa'));
-            langEn.addEventListener('click', () => changeLanguage('en'));
+            const langFa = document.getElementById('lang-fa');
+            const langEn = document.getElementById('lang-en');
+            
+            langFa.addEventListener('click', () => {
+                changeLanguage('fa');
+                localStorage.setItem('language', 'fa');
+            });
+            
+            langEn.addEventListener('click', () => {
+                changeLanguage('en');
+                localStorage.setItem('language', 'en');
+            });
+            
+            // بارگذاری زبان ذخیره شده یا زبان پیش‌فرض
+            const savedLang = localStorage.getItem('language') || 'fa';
+            changeLanguage(savedLang);
             
             updateAuthButtons();
-            changeLanguage('fa');
+            
+            // نمایش محتوای محافظت شده بر اساس وضعیت ورود
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                document.getElementById('protected-content').style.display = 'none';
+            }
         });
     </script>
 </body>
